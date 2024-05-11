@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main Page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<style>
+		body {
+			 background-image: url(MPBG.gif);
+			 background-repeat: no-repeat;
+			 background-size: cover;
+		}
+
+		.navbar {
+			padding: 0;
+			font-family: CCAstroCity;
+			font-size: 20px;
+			background-color: #E4C59E;
+		}
+
+		#topnav {
+			width: 75%;
+		}
+
+		.IG {
+			padding: 10px;
+			height: 80px ;
+			width:80px ;
+		}
+
+		.rounded-container {
+			  display: flex;
+			  border-radius: 10px;
+			  overflow: hidden;
+			  width: 100%;
+			  box-sizing: border-box;
+			  background-color: #E4C59E;
+			  margin-top: 250px;
+			}
+
+		
+		#rounded-image {
+			  width: 150px;
+			  height: 150px;
+			  margin: 5px;
+			  margin-left: 145px;
+			  margin-top: 30px;
+			}
+
+		.rounded-info {
+			  padding: 10px;
+			  flex: 1;
+			  margin-left: -145px;
+			}
+
+		.rounded-info h2 {
+			  font-weight: bold;
+			}
+
+		#name {
+			margin-right: 100px;
+		}
+
+		#TITLE {
+			font-family: Watermelon;
+			font-size: 30px;
+			color: #803D3B;
+		}
+
+		p {
+			font-family: CCAstroCity;
+			color: white;
+		}
+
+		#Mui {
+			margin-top: 30px;
+			margin-bottom: -200px;
+			color: white;
+			background-color: #E4C59E;
+		}
+
+		#FIRSTQ {
+			width: 250px;
+			  height: 250px;
+			margin-left: 50px;
+			padding: 5px;
+		}
+
+		#BOX 
+		{
+			margin-bottom: 300px;
+		}
+
+		#searchsub {
+	cursor: pointer;
+}
+
+.search-container {
+ width: 45%;
+ }
+
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md fixed-top">
+
+		 <img class="IG" src="https://i.pinimg.com/564x/61/64/83/616483d46cad25d0850351910f6534ad.jpg">
+
+		<div id="topnav">
+
+			<ul class="navbar-nav">
+			
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" ><span class="text-light"><strong>Back to Log in</strong></span></a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#" onclick="firstquarter()"><span class="text-light"><strong>1st Quarter</strong></span></a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#" onclick="secondquarter()"><span class="text-light"><strong>2nd Quarter</strong></span></a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#" onclick="thirdquarter()"><span class="text-light"><strong>3rd Quarter</strong></span></a>
+			</li>
+
+
+			</ul>
+
+		</div>
+
+		<div class="search-container">
+        <form>
+            <input type="search" placeholder="Search" name="search" class="searchinput">
+            <buttom type="submit" class="btn btn-light" id="searchsub">search</buttom>
+        </form>
+    </div>
+
+	</nav>
+	
+<center>
+	<div class="col-md-6">
+	<div class="rounded-container">
+  			<img src="PROFILE.png" alt="Image" id="rounded-image" class="rounded-circle" id="MAINPG">
+		  <div class="rounded-info">
+		   <p> <span id="TITLE"> Name </span>   Macapintal, Muizza </p>
+		    <p> <span id="TITLE"> Age </span> fifteen (15)</p>
+		    <p> <span id="TITLE"> G AND S</span> 9 - Ruby</p>
+
+		  </div>
+		</div>
+	</div>
+
+	<p id="Mui"> Welcome to Mui's Online Portfolio <br> Click on the Nav Bar! Then click on the image that appears.</p>
+
+	<div class="col-md-8" id="BOX">
+	<div class="rounded-container">
+  			<a href="page2.html"><p id="viewQ1"><img> </p></a>
+  			<a href="page3.html"><p id="viewQ2"></p></a>
+  				<a href="page4.html"><p id="viewQ3"></p></a>
+		</div>
+	</div>
+	</center>
+
+<script type="text/javascript">
+function firstquarter(){
+	document.getElementById('viewQ1').innerHTML="<img src='FIRSTQ.jpg' id='FIRSTQ'>";
+}
+
+function secondquarter(){
+	document.getElementById('viewQ2').innerHTML="<img src='SECONDQ.jpg' id='FIRSTQ'>";
+}
+
+function thirdquarter(){
+	document.getElementById('viewQ3').innerHTML="<img src='THIRDQ.jpg' id='FIRSTQ'>";
+}
+</script>
+
+</body>
+</html>
